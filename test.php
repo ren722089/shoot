@@ -13,7 +13,7 @@ $sql = "CREATE TABLE IF NOT EXISTS tbtest"
     . "date DATETIME DEFAULT CURRENT_TIMESTAMP,"
     . "password char(10)"
     . ");";
-//queryを使うより、prepareの方が良いのでは？
+
 $stmt = $pdo->query($sql);
 
 
