@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:dbname=tb230565db;host=localhost';
-$user = 'tb-230565';
-$password = 'beSDhmFVAV';
+$dsn = 'mysql:dbname=-------------;host=localhost';
+$user = 'username';
+$password = 'password';
 $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 $sql = "CREATE TABLE IF NOT EXISTS tbtest"
 
@@ -147,9 +147,9 @@ if (!empty($_POST["name"]) && !empty($_POST["comment"]) && !empty($_POST["pass1"
 <hr>
 <p>【投稿内容表示】</p>
 <?php
-$dsn = 'mysql:dbname=tb230565db;host=localhost';
-$user = 'tb-230565';
-$password = 'beSDhmFVAV';
+$dsn = 'mysql:dbname=-----------;host=localhost';
+$user = 'username';
+$password = 'password';
 $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 $sql = 'SELECT * FROM tbtest';
 $stmt = $pdo->query($sql);
